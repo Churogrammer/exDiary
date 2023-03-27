@@ -1,18 +1,19 @@
 package com.duniv.exdiary.domain.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import com.duniv.exdiary.define.EUserType;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-import net.bytebuddy.implementation.bind.annotation.Super;
 
 import javax.persistence.Entity;
+import java.time.LocalDateTime;
 
 @Getter
 @Entity
 @SuperBuilder
-@AllArgsConstructor
+@NoArgsConstructor
 public class UserEntity extends User{
-
+    public UserEntity(String userPk, String userId, String userName, EUserType userType, String email, String telNumber, String phoneNumber) {
+        super(userPk, userId, userName, userType, email, telNumber,phoneNumber, LocalDateTime.now());
+    }
 }
