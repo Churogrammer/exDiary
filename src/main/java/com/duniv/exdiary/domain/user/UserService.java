@@ -13,8 +13,9 @@ public class UserService {
 
     }
 
-    public void getUserByUserPId(){
-        // 내부에서 userPk 존재하는지 확인하기
+    public UserEntity getUserByUserId(String userId){
+        // 내부에서 userId 존재하는지 확인하기
+        return repository.findByUserId(userId);
     }
 
     public void getUserList(){
