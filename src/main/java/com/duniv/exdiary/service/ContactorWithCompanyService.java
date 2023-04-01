@@ -12,7 +12,7 @@ public class ContactorWithCompanyService {
     private final CompanyService companyService;
     // 담당자 ID에 회사 등록하기
     public void registerContactorCompany(String contactorId, String corporateNumber){
-        
+
     }
 
     // 담당자 회사 등록 인증하기
