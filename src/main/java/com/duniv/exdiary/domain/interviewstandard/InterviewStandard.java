@@ -1,4 +1,8 @@
 package com.duniv.exdiary.domain.interviewstandard;
 
-public class InterviewStandard {
+import com.duniv.duf.domain.Common;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+public class InterviewStandard extends Common {
 }

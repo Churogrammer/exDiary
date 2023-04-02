@@ -7,6 +7,6 @@ public class CompanyService {
     }
 
     public void validateCompany(){
-        
+
     }
 }
