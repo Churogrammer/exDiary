@@ -1,4 +1,7 @@
 package com.duniv.exdiary.domain.interviewreservation;
 
-public class InterviewReservationEntity {
+import javax.persistence.Entity;
+
+@Entity
+public class InterviewReservationEntity extends InterviewReservation{
 }

@@ -1,5 +1,7 @@
 package com.duniv.exdiary.domain.interviewee;
 
+import javax.persistence.Entity;
 
-public class IntervieweeEntity {
+@Entity
+public class IntervieweeEntity extends Interviewee{
 }

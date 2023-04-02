@@ -1,4 +1,7 @@
 package com.duniv.exdiary.domain.employee;
 
-public class EmployeeEntity {
+import javax.persistence.Entity;
+
+@Entity
+public class EmployeeEntity extends Employee{
 }
