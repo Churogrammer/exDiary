@@ -1,8 +1,10 @@
 package com.duniv.exdiary.domain.employee;
 
+import lombok.Builder;
 import lombok.Getter;
 
 @Getter
+@Builder
 public class EmployeeRegisterDTO {
     String employeeLoginId;
     String employeePw;

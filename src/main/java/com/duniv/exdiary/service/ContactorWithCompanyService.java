@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class ContactorWithCompanyService {
     private final ContactorService contactorService;
-    //private final CompanyRepository companyRepository;
     private final CompanyService companyService;
 
     public void requestInitCompany(){
