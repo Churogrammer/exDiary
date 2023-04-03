@@ -12,6 +12,7 @@ public class ContactorWithCompanyService {
     private final ContactorService contactorService;
     private final CompanyRepository companyRepository;
     //private final CompanyService companyService;
+
     // 담당자 ID에 회사 등록하기
     public void registerContactorCompany(String contactorId, String corporateNumber){
         //companyRepository.findBy

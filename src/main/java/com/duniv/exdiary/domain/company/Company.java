@@ -8,7 +8,7 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public class Company extends Common {
     @Id
-    String companyPk;
+    String companyId;
     String companyName;
     String corporateNumber;
 
