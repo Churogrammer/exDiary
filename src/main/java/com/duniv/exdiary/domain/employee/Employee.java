@@ -1,14 +1,18 @@
 package com.duniv.exdiary.domain.employee;
 
 import com.duniv.duf.domain.Common;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
 @SuperBuilder
+@MappedSuperclass
 @NoArgsConstructor
 public class Employee extends Common {
+
     @Id
     Integer employeeId;
     String employeeLoginId;
@@ -17,5 +21,8 @@ public class Employee extends Common {
     String employeeDepartmentId;
     String employeeTel;
     String employeeEmail;
+    String companyId;
+    String validateYn;
 
 }
+

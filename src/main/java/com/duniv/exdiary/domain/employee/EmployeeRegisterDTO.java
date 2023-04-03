@@ -10,4 +10,5 @@ public class EmployeeRegisterDTO {
     String employeeDepartmentId;
     String employeeTel;
     String employeeEmail;
+    String companyId;
 }

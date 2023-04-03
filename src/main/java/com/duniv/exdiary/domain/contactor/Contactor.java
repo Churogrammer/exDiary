@@ -11,7 +11,6 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 @SuperBuilder
 @NoArgsConstructor
-@AllArgsConstructor
 public class Contactor extends Common {
     @Id
     String contactorId;
