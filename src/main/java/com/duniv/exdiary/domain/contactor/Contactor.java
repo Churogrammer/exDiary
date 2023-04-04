@@ -1,7 +1,6 @@
 package com.duniv.exdiary.domain.contactor;
 
 import com.duniv.duf.domain.Common;
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
@@ -16,6 +15,7 @@ public class Contactor extends Common {
     String contactorId;
     String employeeId;
     String companyId;
-    String companyValidYn;
+    boolean companyValidYn;
+    boolean representableYn;
 
 }

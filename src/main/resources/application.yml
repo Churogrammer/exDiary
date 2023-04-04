@@ -1,29 +1,41 @@
 server:
   servlet:
     context-path: /exDiary
+#
+#spring:
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.H2Dialect
+#        format_sql: 'true'
+#        show_sql: 'true'
+#    hibernate:
+#      ddl-auto: create
+#    database-platform: org.hibernate.dialect.H2Dialect
+#  datasource:
+#    driverClassName: org.h2.Driver
+#    password: ''
+#    username: sa
+#    url: jdbc:h2:~/test;
+#  h2:
+#    console:
+#      path: /h2-console
+#      enabled: 'true'
 
 spring:
-  jpa:
-    properties:
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: password
+
+    jpa:
+      show-sql: true
       hibernate:
-        dialect: org.hibernate.dialect.H2Dialect
-        format_sql: 'true'
-        show_sql: 'true'
-    hibernate:
-      ddl-auto: create
-    database-platform: org.hibernate.dialect.H2Dialect
-  datasource:
-    driverClassName: org.h2.Driver
-    password: ''
-    username: sa
-    url: jdbc:h2:~/test;
-  h2:
-    console:
-      path: /h2-console
-      enabled: 'true'
-  redis:
-    host: localhost
-    port: 6379
+        ddl-auto: update
+      properties:
+        hibernate:
+          format_sql: true
+
 
 springdoc:
   swagger-ui:
