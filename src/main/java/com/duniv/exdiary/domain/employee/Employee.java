@@ -8,6 +8,7 @@ import lombok.experimental.SuperBuilder;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
+
 @SuperBuilder
 @MappedSuperclass
 @NoArgsConstructor

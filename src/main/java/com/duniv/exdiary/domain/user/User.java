@@ -2,11 +2,9 @@ package com.duniv.exdiary.domain.user;
 
 import com.duniv.duf.domain.Common;
 import com.duniv.exdiary.define.EUserType;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-import net.bytebuddy.implementation.bind.annotation.Super;
 
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;

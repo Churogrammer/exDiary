@@ -1,5 +1,6 @@
 package com.duniv.exdiary.domain.interviewee;
 
+
 import javax.persistence.Entity;
 
 @Entity

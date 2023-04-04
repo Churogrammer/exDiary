@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
+
 @NoArgsConstructor
 @MappedSuperclass
 public class Interviewee extends Common {

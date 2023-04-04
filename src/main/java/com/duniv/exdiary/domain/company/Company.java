@@ -5,6 +5,7 @@ import com.duniv.duf.domain.Common;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
+
 @MappedSuperclass
 public class Company extends Common {
     @Id

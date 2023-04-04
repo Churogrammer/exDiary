@@ -25,6 +25,7 @@ server:
 spring:
     datasource:
       driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://15.164.215.115:3306/wvy?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
       username: root
       password: password
 

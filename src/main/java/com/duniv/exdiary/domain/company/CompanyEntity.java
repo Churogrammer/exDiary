@@ -1,5 +1,6 @@
 package com.duniv.exdiary.domain.company;
 
+
 import javax.persistence.Entity;
 
 @Entity
