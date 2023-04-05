@@ -23,7 +23,7 @@ public class ContactorWithCompanyService {
     public void initCompany(){
         // 담당자 employeeId 조회 및 담당자 지정
         // 사업자 번호 등록
-        companyService.addNewCompany(new CompanyDTO());
+
     }
 
     // 담당자 회사 등록 인증하기

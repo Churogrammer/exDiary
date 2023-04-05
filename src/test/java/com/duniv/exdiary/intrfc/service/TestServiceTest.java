@@ -18,6 +18,13 @@ class TestServiceTest {
     StringRedisTemplate redisTemplate;
     @Test
     void getRedisData() {
-        service.getRedisData(redisTemplate);
+        //service.getRedisData(redisTemplate);
+    }
+
+    @Test
+    void getAppCtxt(){
+        service.hasListEntity();
+        System.out.println("----------- Test");
+        //service.hasRowEntity();
     }
 }

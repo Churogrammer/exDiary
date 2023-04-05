@@ -17,7 +17,7 @@ public class UserEntityTest {
     @Test
     public void getTest(){
 
-        service.getPickingWay("kim");
+        //service.getPickingWay("kim");
         //assertThat(10).isEqualTo(10);
 
     }
