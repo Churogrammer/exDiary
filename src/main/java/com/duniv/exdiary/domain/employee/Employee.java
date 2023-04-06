@@ -23,7 +23,8 @@ public class Employee extends Common {
     String employeeTel;
     String employeeEmail;
     String companyId;
-    String validateYn;
+    boolean validateYn;
+    boolean contatctorYn;
 
 }
 

@@ -15,7 +15,7 @@ public class Contactor extends Common {
     String contactorId;
     String employeeId;
     String companyId;
-    boolean companyValidYn;
+    boolean confirmYn;
     boolean representableYn;
 
 }

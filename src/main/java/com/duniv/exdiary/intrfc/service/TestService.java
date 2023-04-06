@@ -18,11 +18,26 @@ public class TestService {
 
     private final CompanyRepository repository;
 
+    public void noTransactional(String id){
+        repository.findById(id);
+        repository.findById(id);
+        repository.findById(id);
+    }
+
+    @Transactional
+    public void transactional(String id){
+        repository.findById(id);
+        repository.findById(id);
+        repository.findById(id);
+    }
+
+
     @Transactional
     public void hasListEntity(){
         repository.findAll();
         repository.findAll();
         repository.findAll();
+
         System.out.println("----------------- findByAllId");
 
         String[] arr = new String[]{"id_0","id_1"};
@@ -43,11 +58,28 @@ public class TestService {
     }
 
     @Transactional
-    public void hasRowEntity(){
-        repository.findById("id_0");
-        repository.findById("id_0");
-        repository.findById("id_0");
-        repository.findById("id_0");
+    public void findById(String id){
+        repository.findById(id);
+        repository.findById(id);
+        repository.findById(id);
     }
 
+
+    @Transactional
+    public void findAllTransaction(){
+        repository.findAll();
+        repository.findAll();
+        repository.findAll();
+    }
+
+    @Transactional
+    public void findAllByIdTransaction() {
+        List<String> list = new ArrayList<String>();
+        list.add("id_0");
+        list.add("id_1");
+
+        repository.findAllById(list);
+        repository.findAllById(list);
+        repository.findAllById(list);
+    }
 }
