@@ -3,6 +3,8 @@ package com.duniv.exdiary.domain.employee;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 @AllArgsConstructor
 public class EmployeeService {
@@ -17,5 +19,9 @@ public class EmployeeService {
         EmployeeEntity entity = mappingManager.registerEmployee(dto);
         entity.registerYn();
         repository.save(entity);
+    }
+
+    public EmployeeEntity findById(Integer employeeId) {
+        return repository.findById(employeeId).orElse(null);
     }
 }

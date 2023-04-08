@@ -2,13 +2,14 @@ package com.duniv.exdiary.domain.employee;
 
 import com.duniv.duf.domain.Common;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
-
+@Getter
 @SuperBuilder
 @MappedSuperclass
 @NoArgsConstructor
@@ -29,6 +30,7 @@ public class Employee extends Common {
         this.validateYn = false;
         this.contactorYn = false;
     }
+
 
 }
 
