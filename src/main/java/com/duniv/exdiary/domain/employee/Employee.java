@@ -13,9 +13,8 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 @NoArgsConstructor
 public class Employee extends Common {
-
     @Id
-    Integer employeeId;
+    protected Integer employeeId;
     String employeeLoginId;
     String employeePw;
     String employeeName;
@@ -23,8 +22,13 @@ public class Employee extends Common {
     String employeeTel;
     String employeeEmail;
     String companyId;
-    boolean validateYn;
-    boolean contactorYn;
+    protected boolean validateYn;
+    protected boolean contactorYn;
+
+    public void registerYn(){
+        this.validateYn = false;
+        this.contactorYn = false;
+    }
 
 }
 

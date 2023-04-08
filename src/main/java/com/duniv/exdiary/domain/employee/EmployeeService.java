@@ -15,6 +15,7 @@ public class EmployeeService {
 
     public void registerEmployee(EmployeeRegisterDTO dto){
         EmployeeEntity entity = mappingManager.registerEmployee(dto);
+        entity.registerYn();
         repository.save(entity);
     }
 }
