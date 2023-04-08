@@ -18,5 +18,4 @@ public class Company extends Common {
     String companyName;
     String corporateNumber;
     boolean confirmYn;
-    // TODO 인증여부 컬럼 이름 뭐로하지
 }

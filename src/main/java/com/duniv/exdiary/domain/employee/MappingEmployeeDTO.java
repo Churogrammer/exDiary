@@ -9,7 +9,7 @@ public class MappingEmployeeDTO {
         return EmployeeEntity.builder().employeeLoginId(dto.getEmployeeLoginId())
                 .employeePw(dto.getEmployeePw()).employeeEmail(dto.getEmployeeEmail())
                 .employeeDepartmentId(dto.getEmployeeDepartmentId()).employeeTel(dto.getEmployeeTel())
-                .companyId(dto.getCompanyId()).validateYn(false).contatctorYn(false)
+                .companyId(dto.getCompanyId()).validateYn(false).contactorYn(false)
                 .build();
     }
 }

@@ -24,7 +24,7 @@ public class Employee extends Common {
     String employeeEmail;
     String companyId;
     boolean validateYn;
-    boolean contatctorYn;
+    boolean contactorYn;
 
 }
 
