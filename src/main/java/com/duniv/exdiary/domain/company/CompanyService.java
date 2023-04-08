@@ -19,7 +19,7 @@ public class CompanyService {
     @Transactional
     public void saveCompany(int num){
        for(int i = 0 ; i < num ;i ++){
-           CompanyDTO dto = new CompanyDTO("id_"+i,"회사_" + i , "c-"+i);
+           CompanyDTO dto = new CompanyDTO("id_"+i,"회사_" + i , "c-"+i, false);
            repository.save(dto.toEntity());
        }
     }

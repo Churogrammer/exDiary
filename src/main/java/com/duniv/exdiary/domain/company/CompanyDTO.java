@@ -6,8 +6,8 @@ import lombok.NoArgsConstructor;
 @Getter
 public class CompanyDTO extends Company{
 
-    public CompanyDTO(String companyId, String companyName, String corporateNumber) {
-        super(companyId, companyName, corporateNumber);
+    public CompanyDTO(String companyId, String companyName, String corporateNumber, boolean confirmYn) {
+        super(companyId, companyName, corporateNumber, confirmYn);
     }
 
     public CompanyEntity toEntity(){
