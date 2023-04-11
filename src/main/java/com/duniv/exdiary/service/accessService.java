@@ -25,7 +25,7 @@ public class accessService {
             return;
         }
 
-        if(!StringTools.isEmpty(entity.getCompanyId())){
+        if(!StringTools.isEmpty(entity.getCompany().getCompanyId())){
             // 담당자에게 연락해서 승인 받으세요
             return;
         }

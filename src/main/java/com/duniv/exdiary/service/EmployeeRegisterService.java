@@ -27,10 +27,10 @@ public class EmployeeRegisterService {
         // 2. 회사 아이디 입력함
         if(null != dto.getCompanyId()){
             // 2-1. 회사 존재 -> certification 등록
-            if(!companyService.isExistCompany(dto.getCompanyId())){
-                // 2-2. 회사 존재하지 않음
-                // TODO Exception
-            }
+//            if(!companyService.isExistCompany(dto.getCompanyId())){
+//                // 2-2. 회사 존재하지 않음
+//                // TODO Exception
+//            }
         }
 
         //

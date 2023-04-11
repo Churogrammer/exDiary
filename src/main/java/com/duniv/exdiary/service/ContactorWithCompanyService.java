@@ -7,6 +7,7 @@ import com.duniv.exdiary.domain.company.CompanyService;
 import com.duniv.exdiary.domain.contactor.ContactorService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @AllArgsConstructor
@@ -14,6 +15,7 @@ public class ContactorWithCompanyService {
     private final ContactorService contactorService;
     private final CompanyService companyService;
 
+    @Transactional
     public void requestInitCompany(){
         // 등록 employee Id
         // 필요 서류 첨부

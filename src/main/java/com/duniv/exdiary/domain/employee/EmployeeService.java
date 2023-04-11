@@ -1,5 +1,6 @@
 package com.duniv.exdiary.domain.employee;
 
+import com.duniv.exdiary.domain.company.CompanyEntity;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

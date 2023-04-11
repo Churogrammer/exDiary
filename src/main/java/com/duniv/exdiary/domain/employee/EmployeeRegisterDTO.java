@@ -6,11 +6,11 @@ import lombok.Getter;
 @Getter
 @Builder
 public class EmployeeRegisterDTO {
-    String employeeLoginId;
-    String employeePw;
-    String employeeName;
-    String employeeDepartmentId;
-    String employeeTel;
-    String employeeEmail;
-    String companyId;
+    private String employeeLoginId;
+    private String employeePw;
+    private String employeeName;
+    private String employeeDepartmentId;
+    private String employeeTel;
+    private String employeeEmail;
+    private String companyId;
 }

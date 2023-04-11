@@ -1,5 +1,6 @@
 package com.duniv.exdiary.intrfc.service;
 
+import com.duniv.duf.domain.tools.StringTools;
 import com.duniv.exdiary.domain.company.CompanyEntity;
 import com.duniv.exdiary.domain.company.CompanyRepository;
 import lombok.AllArgsConstructor;
@@ -81,5 +82,11 @@ public class TestService {
         repository.findAllById(list);
         repository.findAllById(list);
         repository.findAllById(list);
+    }
+
+    public void makeException(String id) {
+        if(StringTools.isEmpty(id)){
+            throw new NullPointerException();
+        }
     }
 }
