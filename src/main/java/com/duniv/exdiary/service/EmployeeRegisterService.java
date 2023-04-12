@@ -1,6 +1,5 @@
 package com.duniv.exdiary.service;
 
-import com.duniv.exdiary.domain.certification.Certification;
 import com.duniv.exdiary.domain.company.CompanyService;
 import com.duniv.exdiary.domain.employee.EmployeeRegisterDTO;
 import com.duniv.exdiary.domain.employee.EmployeeService;

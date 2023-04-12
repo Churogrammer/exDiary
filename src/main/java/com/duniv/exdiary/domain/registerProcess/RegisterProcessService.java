@@ -1,11 +1,11 @@
-package com.duniv.exdiary.domain.certification;
+package com.duniv.exdiary.domain.registerProcess;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-public class CertificationService {
+public class RegisterProcessService {
 
 
 }

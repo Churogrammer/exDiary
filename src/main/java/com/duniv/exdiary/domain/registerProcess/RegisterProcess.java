@@ -1,6 +1,6 @@
-package com.duniv.exdiary.domain.certification;
+package com.duniv.exdiary.domain.registerProcess;
 
-public class Certification {
+public class RegisterProcess {
     String certificationId;
     String companyId;
     String employeeId;
