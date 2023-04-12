@@ -1,4 +1,4 @@
-package com.duniv.exdiary.domain.registerProcess;
+package com.duniv.exdiary.domain.registerprocess;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

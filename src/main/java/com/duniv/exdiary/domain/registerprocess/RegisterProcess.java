@@ -1,4 +1,4 @@
-package com.duniv.exdiary.domain.registerProcess;
+package com.duniv.exdiary.domain.registerprocess;
 
 public class RegisterProcess {
     String certificationId;

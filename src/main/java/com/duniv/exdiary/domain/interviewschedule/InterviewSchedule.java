@@ -1,4 +1,4 @@
-package com.duniv.exdiary.domain.interviewSchedule;
+package com.duniv.exdiary.domain.interviewschedule;
 
 import com.duniv.duf.domain.Common;
 import lombok.NoArgsConstructor;

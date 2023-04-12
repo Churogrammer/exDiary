@@ -1,4 +1,4 @@
-package com.duniv.exdiary.domain.interviewreservation;
+package com.duniv.exdiary.domain.schedulereservation;
 
 import com.duniv.duf.domain.Common;
 import lombok.NoArgsConstructor;
@@ -9,7 +9,7 @@ import javax.persistence.MappedSuperclass;
 
 @NoArgsConstructor
 @MappedSuperclass
-public class InterviewReservation extends Common {
+public class ScheduleReservation extends Common {
     @Id
     String interviewReservationId;
     String intervieweePk;
