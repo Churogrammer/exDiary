@@ -4,7 +4,6 @@ import com.duniv.exdiary.domain.company.CompanyDTO;
 import com.duniv.exdiary.domain.company.CompanyEntity;
 import com.duniv.exdiary.domain.company.CompanyRepository;
 import com.duniv.exdiary.domain.company.CompanyService;
-import com.duniv.exdiary.domain.contactor.ContactorService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,7 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @AllArgsConstructor
 public class ContactorWithCompanyService {
-    private final ContactorService contactorService;
     private final CompanyService companyService;
 
     @Transactional
