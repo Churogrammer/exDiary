@@ -6,9 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class MappingEmployeeDTO {
     public Employee registerEmployee(EmployeeRegisterDTO dto){
-        return Employee.builder().employeeLoginId(dto.getEmployeeLoginId())
-                .employeePw(dto.getEmployeePw()).employeeEmail(dto.getEmployeeEmail())
-                .employeeDepartmentId(dto.getEmployeeDepartmentId()).employeeTel(dto.getEmployeeTel())
+        return Employee.builder().loginId(dto.getEmployeeLoginId())
+                .password(dto.getEmployeePw())
+                .departmentId(dto.getEmployeeDepartmentId())
                 .company(new Company(dto.getCompanyId()))
                 .build();
     }

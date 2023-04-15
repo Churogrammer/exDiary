@@ -1,8 +1,5 @@
 package com.duniv.exdiary.service;
 
-import com.duniv.exdiary.domain.company.CompanyDTO;
-import com.duniv.exdiary.domain.company.CompanyEntity;
-import com.duniv.exdiary.domain.company.CompanyRepository;
 import com.duniv.exdiary.domain.company.CompanyService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

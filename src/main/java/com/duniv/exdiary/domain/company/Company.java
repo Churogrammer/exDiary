@@ -16,9 +16,7 @@ import java.util.List;
 @Entity
 @Getter
 @SuperBuilder
-@MappedSuperclass
 @NoArgsConstructor
-@AllArgsConstructor
 public class Company extends Common {
     @Id
     String companyId;

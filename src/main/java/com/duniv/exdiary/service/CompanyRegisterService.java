@@ -1,7 +1,6 @@
 package com.duniv.exdiary.service;
 
 import com.duniv.exdiary.domain.company.Company;
-import com.duniv.exdiary.domain.company.CompanyEntity;
 import com.duniv.exdiary.domain.company.CompanyService;
 import com.duniv.exdiary.domain.company.MappingCompanyDTO;
 import com.duniv.exdiary.intrfc.controller.company.dto.CompanyRegisterDTO;

@@ -1,7 +1,6 @@
 package com.duniv.exdiary.intrfc.service;
 
 import com.duniv.duf.domain.tools.StringTools;
-import com.duniv.exdiary.domain.company.CompanyEntity;
 import com.duniv.exdiary.domain.company.CompanyRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

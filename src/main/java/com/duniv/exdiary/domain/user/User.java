@@ -13,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn(name = "userType")
+@DiscriminatorColumn(name = "UType")
 public class User extends Common {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long userId;
