@@ -30,6 +30,8 @@ spring:
       password: password
 
     jpa:
+      database: mysql   # 추가 해준 부분
+      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect # 추가 해준 부분
       show-sql: true
       hibernate:
         ddl-auto: update

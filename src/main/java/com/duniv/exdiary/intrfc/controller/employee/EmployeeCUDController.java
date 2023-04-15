@@ -1,6 +1,6 @@
 package com.duniv.exdiary.intrfc.controller.employee;
 
-import com.duniv.exdiary.domain.employee.EmployeeService;
+import com.duniv.exdiary.domain.user.employee.EmployeeService;
 import com.duniv.exdiary.intrfc.controller.employee.dto.request.EmployeeRegisterRequestDTO;
 import com.duniv.exdiary.service.EmployeeRegisterService;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;

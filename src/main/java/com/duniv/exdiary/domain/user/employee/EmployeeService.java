@@ -1,10 +1,7 @@
-package com.duniv.exdiary.domain.employee;
+package com.duniv.exdiary.domain.user.employee;
 
-import com.duniv.exdiary.domain.company.CompanyEntity;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 @AllArgsConstructor

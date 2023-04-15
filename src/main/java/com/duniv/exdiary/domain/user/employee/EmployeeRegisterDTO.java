@@ -1,4 +1,4 @@
-package com.duniv.exdiary.domain.employee;
+package com.duniv.exdiary.domain.user.employee;
 
 import lombok.Builder;
 import lombok.Getter;

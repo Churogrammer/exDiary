@@ -1,6 +1,5 @@
-package com.duniv.exdiary.domain.employee;
+package com.duniv.exdiary.domain.user.employee;
 
-import com.duniv.exdiary.define.DConst;
 import com.duniv.exdiary.domain.company.CompanyEntity;
 import org.springframework.stereotype.Component;
 

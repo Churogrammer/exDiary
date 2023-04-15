@@ -1,8 +1,8 @@
 package com.duniv.exdiary.service;
 
 import com.duniv.duf.domain.tools.StringTools;
-import com.duniv.exdiary.domain.employee.EmployeeEntity;
-import com.duniv.exdiary.domain.employee.EmployeeService;
+import com.duniv.exdiary.domain.user.employee.EmployeeEntity;
+import com.duniv.exdiary.domain.user.employee.EmployeeService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

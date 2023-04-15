@@ -1,8 +1,9 @@
-package com.duniv.exdiary.domain.employee;
+package com.duniv.exdiary.domain.user.employee;
 
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 

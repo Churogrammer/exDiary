@@ -1,8 +1,7 @@
-package com.duniv.exdiary.domain.employee;
+package com.duniv.exdiary.domain.user.employee;
 
 import com.duniv.duf.domain.Common;
 import com.duniv.exdiary.domain.company.CompanyEntity;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
@@ -24,6 +23,7 @@ public class Employee extends Common {
     String employeeTel;
     String employeeEmail;
     @ManyToOne
+    @JoinColumn(name = "companyId")
     CompanyEntity company;
     protected boolean validateYn;
     protected boolean contactorYn;
@@ -34,9 +34,9 @@ public class Employee extends Common {
     }
 
     public void setCompany() throws Exception {
-        if(company != null){
-            throw new Exception("");
-        }
+//        if(company != null){
+//            throw new Exception("");
+//        }
     }
 
 

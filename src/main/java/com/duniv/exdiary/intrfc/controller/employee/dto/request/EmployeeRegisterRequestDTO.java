@@ -1,6 +1,6 @@
 package com.duniv.exdiary.intrfc.controller.employee.dto.request;
 
-import com.duniv.exdiary.domain.employee.EmployeeRegisterDTO;
+import com.duniv.exdiary.domain.user.employee.EmployeeRegisterDTO;
 
 public class EmployeeRegisterRequestDTO {
     String id;
