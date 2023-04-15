@@ -7,6 +7,6 @@ import java.util.List;
 
 
 @Repository
-public interface CompanyRepository extends JpaRepository<CompanyEntity, String> {
+public interface CompanyRepository extends JpaRepository<Company, String> {
 
 }

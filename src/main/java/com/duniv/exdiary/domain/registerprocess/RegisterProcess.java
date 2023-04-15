@@ -1,5 +1,7 @@
 package com.duniv.exdiary.domain.registerprocess;
 
+import javax.persistence.Entity;
+
 public class RegisterProcess {
     String certificationId;
     String companyId;

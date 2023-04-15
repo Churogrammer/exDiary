@@ -1,7 +1,7 @@
 package com.duniv.exdiary.service;
 
 import com.duniv.duf.domain.tools.StringTools;
-import com.duniv.exdiary.domain.user.employee.EmployeeEntity;
+import com.duniv.exdiary.domain.user.employee.Employee;
 import com.duniv.exdiary.domain.user.employee.EmployeeService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -17,7 +17,7 @@ public class accessService {
 
     // 해당 아이디가 머물고 있는 스텝
     private void isConfirmId(Integer employeeId){
-        EmployeeEntity entity = employeeService.findById(employeeId);
+        Employee entity = employeeService.findById(employeeId);
         // 승인된 직원인가?
         if(entity.isValidateYn()){
             // index 화면

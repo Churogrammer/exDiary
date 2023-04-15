@@ -17,11 +17,11 @@ public class CompanyService {
         return repository.findById(companyId) != null ? true : false;
     }
 
-    public CompanyEntity getCompanyEntityById(String id){
+    public Company getCompanyEntityById(String id){
         return repository.findById(id).orElse(null);
     }
     @Transactional
-    public void save(CompanyEntity entity){
+    public void save(Company entity){
         repository.save(entity);
     }
     @Transactional

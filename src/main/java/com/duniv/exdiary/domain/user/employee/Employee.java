@@ -1,13 +1,14 @@
 package com.duniv.exdiary.domain.user.employee;
 
 import com.duniv.duf.domain.Common;
-import com.duniv.exdiary.domain.company.CompanyEntity;
+import com.duniv.exdiary.domain.company.Company;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import javax.persistence.*;
 
+@Entity
 @Getter
 @SuperBuilder
 @MappedSuperclass
@@ -24,7 +25,7 @@ public class Employee extends Common {
     String employeeEmail;
     @ManyToOne
     @JoinColumn(name = "companyId")
-    CompanyEntity company;
+    Company company;
     protected boolean validateYn;
     protected boolean contactorYn;
 

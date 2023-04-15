@@ -14,12 +14,12 @@ public class EmployeeService {
     }
 
     public void registerEmployee(EmployeeRegisterDTO dto){
-        EmployeeEntity entity = mappingManager.registerEmployee(dto);
+        Employee entity = mappingManager.registerEmployee(dto);
         entity.registerYn();
         repository.save(entity);
     }
 
-    public EmployeeEntity findById(Integer employeeId) {
+    public Employee findById(Integer employeeId) {
         return repository.findById(employeeId).orElse(null);
     }
 }

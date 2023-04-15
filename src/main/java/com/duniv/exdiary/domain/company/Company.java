@@ -1,14 +1,19 @@
 package com.duniv.exdiary.domain.company;
 
 import com.duniv.duf.domain.Common;
+import com.duniv.exdiary.domain.user.employee.Employee;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.OneToMany;
+import java.util.List;
 
+@Entity
 @Getter
 @SuperBuilder
 @MappedSuperclass
@@ -20,6 +25,10 @@ public class Company extends Common {
     String companyName;
     String corporateNumber;
     boolean confirmYn;
+
+
+    @OneToMany(mappedBy = "company")
+    List<Employee> employees;
 
     public Company(String companyId){
         this.companyId = companyId;

@@ -1,5 +1,6 @@
 package com.duniv.exdiary.service;
 
+import com.duniv.exdiary.domain.company.Company;
 import com.duniv.exdiary.domain.company.CompanyEntity;
 import com.duniv.exdiary.domain.company.CompanyService;
 import com.duniv.exdiary.domain.company.MappingCompanyDTO;
@@ -15,7 +16,7 @@ public class CompanyRegisterService {
 
     public void initCompany(CompanyRegisterDTO dto){
         MappingCompanyDTO mapping = new MappingCompanyDTO();
-        CompanyEntity entity = mapping.registerCompany(dto);
-        companyService.save(entity);
+        Company company = mapping.registerCompany(dto);
+        companyService.save(company);
     }
 }
