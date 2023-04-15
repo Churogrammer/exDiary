@@ -10,6 +10,11 @@ import javax.persistence.MappedSuperclass;
 @NoArgsConstructor
 @MappedSuperclass
 public class Interviewee extends Common {
-    @Id
-    String intervieweePk;
+    // Id
+    // UserId;
+    String companySerialNo;
+    String userSerialNo;
+    String name;
+    String email;
+    String phoneNumber;
 }
