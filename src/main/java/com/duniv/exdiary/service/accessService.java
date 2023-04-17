@@ -11,21 +11,28 @@ import org.springframework.stereotype.Service;
 public class accessService {
     private final EmployeeService employeeService;
     // 로그인
-    public void login(){
+    public void canAccessIndex(Integer userId){
+        // 승인되지 않은 아이디라면 승인 대기 요청
+        Employee employee = employeeService.getEmployeeByUserId(userId);
+        if(!employee.isValidateYn()){
+            // 승인 단계가 어디까지 왔나?
+            // 승인 완료 요청
+            return;
+        }
 
     }
 
     // 해당 아이디가 머물고 있는 스텝
-    private void isConfirmId(Integer employeeId){
-        Employee entity = employeeService.findById(employeeId);
+    private void isConfirmId(Integer id){
+        Employee employee = employeeService.getEmployeeByUserId(id);
         // 승인된 직원인가?
-        if(entity.isValidateYn()){
+        if(employee.isValidateYn()){
             // index 화면
             // TODO 대신 권한에 맞는 버튼만 보여줌
             return;
         }
 
-        if(!StringTools.isEmpty(entity.getCompany().getCompanyId())){
+        if(!StringTools.isEmpty(employee.getCompany().getCompanyId())){
             // 담당자에게 연락해서 승인 받으세요
             return;
         }

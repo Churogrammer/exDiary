@@ -11,8 +11,6 @@ import javax.persistence.*;
 
 @Entity
 @Getter
-@SuperBuilder
-@NoArgsConstructor
 @DiscriminatorValue("EMPLOYEE")
 public class Employee extends User {
     //@Id
@@ -38,6 +36,16 @@ public class Employee extends User {
 //        }
     }
 
+    public Employee(String loginId, String password, String departmentId, Company company
+                        , String name, String phoneNumber, String email) {
+        super(name, phoneNumber, email);
 
+        this.loginId = loginId;
+        this.password = password;
+        this.departmentId = departmentId;
+        this.company = company;
+
+        this.registerYn();
+    }
 }
 

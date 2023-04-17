@@ -20,4 +20,11 @@ public class User extends Common {
     String name;
     String phoneNumber;
     String email;
+
+    public User(String name, String phoneNumber, String email) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
 }

@@ -17,6 +17,10 @@ public class CompanyService {
         return repository.findById(companyId) != null ? true : false;
     }
 
+    public Company getConfirmedCompanyById(String id){
+        return repository.findByCompanyIdAndConfirmYn(id, true);
+    }
+
     public Company getCompanyEntityById(String id){
         return repository.findById(id).orElse(null);
     }

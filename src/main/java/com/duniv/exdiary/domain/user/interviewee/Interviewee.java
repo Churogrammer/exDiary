@@ -12,9 +12,13 @@ import javax.persistence.*;
 @SuperBuilder
 @DiscriminatorValue("EMPLOYEE")
 public class Interviewee extends User {
+
     String companySerialNo;
     String userSerialNo;
-    String name;
-    String email;
-    String phoneNumber;
+
+    public Interviewee(String companySerialNo, String userSerialNo, String name, String phoneNumber, String email){
+        super(name, phoneNumber, email);
+        this.companySerialNo = companySerialNo;
+        this.userSerialNo = userSerialNo;
+    }
 }
