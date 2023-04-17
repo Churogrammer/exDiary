@@ -34,7 +34,7 @@ class CompanyServiceTest {
     @DisplayName("삼성 테스트")
     @Transactional
     void getCompanyEntityById(){
-        CompanyEntity entity = companyService.getCompanyEntityById("samsung");
+        Company entity = companyService.getCompanyEntityById("samsung");
         //assertEquals(entity, null);
         assertNotEquals(entity,null);
     }
