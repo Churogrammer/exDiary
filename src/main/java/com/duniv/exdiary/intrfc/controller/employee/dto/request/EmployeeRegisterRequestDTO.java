@@ -13,7 +13,7 @@ public class EmployeeRegisterRequestDTO {
 
     public EmployeeRegisterDTO toServiceDto(){
         return EmployeeRegisterDTO.builder()
-                .loginId(id).password(pw).name(name).companyId(companyId).departmentId(departmentId)
+                .loginId(id).password(pw).name(name).companyId(companyId)
                 .phoneNumber(tel).email(email).build();
     }
 }

@@ -3,6 +3,7 @@ package com.duniv.exdiary.intrfc.controller.company;
 import com.duniv.exdiary.domain.company.CompanyService;
 import com.duniv.exdiary.intrfc.controller.company.dto.CompanyRegisterDTO;
 import com.duniv.exdiary.intrfc.controller.employee.dto.request.EmployeeRegisterRequestDTO;
+import com.duniv.exdiary.intrfc.exception.ApiException;
 import com.duniv.exdiary.service.CompanyRegisterService;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
@@ -12,7 +13,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController()
+@RestController
+@RestControllerAdvice
 @RequestMapping("/company")
 @RequiredArgsConstructor
 @OpenAPIDefinition(info = @Info(title = "회사 API"))
