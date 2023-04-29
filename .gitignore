@@ -1,14 +1,14 @@
 HELP.md
 .DS_Store
 .gradle
+gradlew
+gradlew.bat
+settings.gradle.kts
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-gradlew
-gradlew.bat
-settings.gradle.kts
 src/main/resources/application-dev.yml
 
 
