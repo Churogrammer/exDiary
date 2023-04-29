@@ -16,7 +16,6 @@ import java.time.LocalDateTime;
 public class Common {
     LocalDateTime insertDt;
 
-    String modYn;
     String modId;
     LocalDateTime modDt;
 
