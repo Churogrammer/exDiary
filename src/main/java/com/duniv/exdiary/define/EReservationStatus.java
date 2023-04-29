@@ -1,2 +1,6 @@
-package com.duniv.exdiary.define;public enum EReservationStatus {
+package com.duniv.exdiary.define;
+
+public enum EReservationStatus {
+    RESERVATION
+    , CANCEL
 }
