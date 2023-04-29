@@ -32,7 +32,7 @@ public class accessService {
             return;
         }
 
-        if(!StringTools.isEmpty(employee.getCompany().getCompanyId())){
+        if(null != employee.getCompany().getCompanyId()){
             // 담당자에게 연락해서 승인 받으세요
             return;
         }
