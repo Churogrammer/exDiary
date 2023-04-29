@@ -7,7 +7,6 @@ public class MappingCompanyDTO {
 
     public Company registerCompany(CompanyRegisterDTO dto){
         return Company.builder()
-                .companyId(dto.getCompanyId())
                 .companyName(dto.getCompanyName())
                 .corporateNumber(dto.getCorporateNumber())
                 .confirmYn(false)

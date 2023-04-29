@@ -13,10 +13,9 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-@DiscriminatorColumn(name = "UType")
 public class User extends Common {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long userId;
+    Integer userId;
     String name;
     String phoneNumber;
     String email;

@@ -11,6 +11,6 @@ public class CompanyDTO extends Company{
 //    }
 
     public Company toEntity(){
-        return Company.builder().companyId(companyId).companyName(companyName).corporateNumber(corporateNumber).build();
+        return Company.builder().companyName(companyName).corporateNumber(corporateNumber).build();
     }
 }

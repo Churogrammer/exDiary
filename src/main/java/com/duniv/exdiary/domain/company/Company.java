@@ -7,10 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -18,17 +15,13 @@ import java.util.List;
 @SuperBuilder
 @NoArgsConstructor
 public class Company extends Common {
-    @Id
-    String companyId;
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Integer companyId;
     String companyName;
     String corporateNumber;
     boolean confirmYn;
 
-
     @OneToMany(mappedBy = "company")
     List<Employee> employees;
 
-    public Company(String companyId){
-        this.companyId = companyId;
-    }
 }
