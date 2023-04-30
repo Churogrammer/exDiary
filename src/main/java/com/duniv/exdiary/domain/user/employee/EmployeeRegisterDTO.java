@@ -17,9 +17,4 @@ public class EmployeeRegisterDTO {
     private String phoneNumber;
     private String email;
     private String companyId;
-    private Company company;
-
-    public void updateCompany(Company company){
-        this.company = company;
-    }
 }

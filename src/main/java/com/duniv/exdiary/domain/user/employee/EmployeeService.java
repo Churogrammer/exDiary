@@ -1,6 +1,6 @@
 package com.duniv.exdiary.domain.user.employee;
 
-import com.duniv.exdiary.domain.user.User;
+import com.duniv.exdiary.intrfc.service.convertor.MappingEmployeeDTO;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

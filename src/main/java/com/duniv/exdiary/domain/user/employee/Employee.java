@@ -26,13 +26,12 @@ public class Employee extends User {
         this.contactorYn = false;
     }
 
-    public Employee(String loginId, String password, Company company
+    public Employee(String loginId, String password
                         , String name, String phoneNumber, String email) {
         super(name, phoneNumber, email);
 
         this.loginId = loginId;
         this.password = password;
-        this.company = company;
 
         this.registerYn();
     }
