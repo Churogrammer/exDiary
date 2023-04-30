@@ -8,5 +8,4 @@ import java.util.List;
 
 @Repository
 public interface CompanyRepository extends JpaRepository<Company, String> {
-    public Company findByCompanyIdAndConfirmYn(String id, boolean confirmYn);
 }
