@@ -1,8 +1,8 @@
 package com.duniv.exdiary.service;
 
-import com.duniv.exdiary.domain.user.employee.Employee;
 import com.duniv.exdiary.domain.user.employee.EmployeeRegisterDTO;
 import com.duniv.exdiary.domain.user.employee.EmployeeService;
+import com.duniv.exdiary.intrfc.service.EmployeeRegisterService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
