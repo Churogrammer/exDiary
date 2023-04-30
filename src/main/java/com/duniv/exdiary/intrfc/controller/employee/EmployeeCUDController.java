@@ -2,8 +2,7 @@ package com.duniv.exdiary.intrfc.controller.employee;
 
 import com.duniv.exdiary.domain.user.employee.EmployeeService;
 import com.duniv.exdiary.intrfc.controller.employee.dto.request.EmployeeRegisterRequestDTO;
-import com.duniv.exdiary.intrfc.exception.ApiException;
-import com.duniv.exdiary.service.EmployeeRegisterService;
+import com.duniv.exdiary.intrfc.service.EmployeeRegisterService;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.info.Info;
