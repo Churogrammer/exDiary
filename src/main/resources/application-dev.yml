@@ -38,9 +38,6 @@ spring:
       properties:
         hibernate:
           format_sql: true
-    mvc:
-      servlet:
-        load-on-startup: 1
 
 
 springdoc:

@@ -50,6 +50,6 @@ public class EmployeeRegisterService {
         employeeService.registerEmployee(dto);
 
         // 기업이 유효하지 않으면 나중에 등록
-        
+
     }
 }
