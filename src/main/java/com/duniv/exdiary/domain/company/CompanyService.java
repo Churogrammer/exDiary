@@ -14,13 +14,18 @@ public class CompanyService {
     private final CompanyRepository repository;
     private final CompanyRepositoryImpl companyRepositoryImpl;
 
-    public boolean isExistCompany(String companyId){
+    public boolean isExistCompanyByCompanyId(String companyId){
         return repository.findById(companyId) != null ? true : false;
+    }
+
+    public boolean isExistCompanyByCorporateNumber(String corporateNumber){
+        return repository.findById(corporateNumber) != null ? true : false;
     }
 
     public Company getCompanyEntityById(String id){
         return repository.findById(id).orElse(null);
     }
+
     @Transactional
     public void save(Company entity){
         repository.save(entity);

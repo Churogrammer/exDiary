@@ -11,6 +11,7 @@ import com.duniv.exdiary.intrfc.service.convertor.MappingEmployeeDTO;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Slf4j
@@ -20,6 +21,7 @@ public class EmployeeRegisterService {
     private final MappingEmployeeDTO mappingEmployeeManager;
     private final CompanyService companyService;
 
+    @Transactional
     public void registerEmployee(EmployeeRegisterDTO dto){
         // 계정 중복 확인
         if(!employeeService.validateIdAvailability(dto.getLoginId())){
@@ -50,6 +52,5 @@ public class EmployeeRegisterService {
         employeeService.registerEmployee(dto);
 
         // 기업이 유효하지 않으면 나중에 등록
-
     }
 }

@@ -8,4 +8,5 @@ import lombok.Getter;
 public class CompanyRegisterDTO {
     String companyName;
     String corporateNumber;
+    String contactorId;
 }

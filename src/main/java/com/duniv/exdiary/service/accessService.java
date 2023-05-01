@@ -3,6 +3,8 @@ package com.duniv.exdiary.service;
 import com.duniv.duf.domain.tools.StringTools;
 import com.duniv.exdiary.domain.user.employee.Employee;
 import com.duniv.exdiary.domain.user.employee.EmployeeService;
+import com.duniv.exdiary.intrfc.exception.ApiException;
+import com.duniv.exdiary.intrfc.exception.ErrorCode;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,13 +14,18 @@ public class accessService {
     private final EmployeeService employeeService;
     // 로그인
     public void canAccessIndex(Integer userId){
-        // 승인되지 않은 아이디라면 승인 대기 요청
+        // 기업 ID가 같이 저장되어 있지 않음
+
+
+
         Employee employee = employeeService.getEmployeeByUserId(userId);
-        if(!employee.isValidateYn()){
-            // 승인 단계가 어디까지 왔나?
-            // 승인 완료 요청
-            return;
+        if(!employee.isValidateYn()) {
+           // throw new ApiException(ErrorCode.NOT_VALIDATE_ACCOUNT);
         }
+
+        //
+       // if(employee.getCompany().getCompanyId())
+
 
     }
 

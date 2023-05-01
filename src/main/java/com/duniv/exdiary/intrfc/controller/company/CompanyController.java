@@ -9,6 +9,7 @@ import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.info.Info;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,11 +26,11 @@ public class CompanyController {
     public void searchCompany(String name){
         //companyService.
     }
+    @Operation(description = "기업 등록")
     @PostMapping(value = "/register", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity register(@RequestBody CompanyRegisterDTO dto) {
         companyRegisterService.initCompany(dto);
-        return null;
-        //return new ResponseEntity<>(result, HttpStatus.OK);
+        return new ResponseEntity(HttpStatus.OK);
     }
     @Operation(description = "기업 인증 현황")
     @GetMapping(value = "/certify/step", produces = MediaType.APPLICATION_JSON_VALUE)
